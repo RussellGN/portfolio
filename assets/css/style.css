@@ -94,8 +94,8 @@
 	}
 
 	.hero-btn-animation {
-		-webkit-animation: go-down 0.2s alternate-reverse infinite linear;
-		animation: go-down 0.2s alternate-reverse infinite linear;
+		/* -webkit-animation: go-down 0.2s alternate-reverse infinite linear;
+		 animation: go-down 0.2s alternate-reverse infinite linear; */
 		background-color: rebeccapurple;
 		color: white;
 	}
