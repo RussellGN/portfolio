@@ -25,6 +25,15 @@
 	.bg-primary {
 		background-color: rebeccapurple !important;
 	}
+	.a-default {
+		text-decoration: underline;
+		color: rgb(199, 166, 231) !important;
+	}
+	.a-default:hover,
+	.a-default:focus {
+		text-decoration: underline;
+		color: rgb(145, 113, 176) !important;
+	}
 	.text-primary {
 		color: rebeccapurple !important;
 	}
