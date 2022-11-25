@@ -34,8 +34,11 @@
 	.border-darker {
 		border-color: rgb(23, 19, 26) !important;
 	}
-	.c-rounded {
+	.c-rounded-2 {
 		border-radius: 20px;
+	}
+	.c-rounded-1 {
+		border-radius: 10px;
 	}
 	.project-link {
 		z-index: 5;
@@ -92,35 +95,24 @@
 		padding-bottom: 4px;
 		border-bottom: 3px solid rebeccapurple;
 	}
-
-	.hero-btn-animation {
-		/* -webkit-animation: go-down 0.2s alternate-reverse infinite linear;
-		 animation: go-down 0.2s alternate-reverse infinite linear; */
-		background-color: rebeccapurple;
-		color: white;
-	}
-
-	.hero-btn-animation:hover,
-	.hero-btn-animation:focus {
+	.btn-reb {
+		background-color: rebeccapurple !important;
 		color: white !important;
 	}
-
-	@-webkit-keyframes go-down {
-		from {
-			transform: translateY(0);
-		}
-		to {
-			transform: translateY(20px);
-		}
+	.btn-reb:hover,
+	.btn-reb:focus {
+		opacity: 1 !important;
+		background-color: rgb(120, 61, 180) !important;
 	}
+}
 
-	@keyframes go-down {
-		from {
-			transform: translateY(0);
-		}
-		to {
-			transform: translateY(20px);
-		}
+/* photos */
+@media screen {
+	.display-photo {
+		width: 8rem;
+		height: 8rem;
+		object-fit: cover;
+		border-radius: 100%;
 	}
 }
 
@@ -141,6 +133,7 @@
 	.skills .progress-bar-wrap {
 		background: white;
 		height: 10px;
+		border-radius: 2rem;
 	}
 
 	.skills .progress-bar {
@@ -148,6 +141,11 @@
 		height: 10px;
 		transition: 0.9s;
 		background-color: rebeccapurple;
+		border-radius: 2rem;
+	}
+	.skills .progress-bar.fair {
+		transition: 0s;
+		background-color: gray;
 	}
 }
 
