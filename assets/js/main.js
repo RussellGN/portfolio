@@ -54,5 +54,5 @@
 		};
 	});
 
-	select("#my-age").textContent = new Date().getFullYear() - 2002;
+	// select("#my-age").textContent = new Date().getFullYear() - 2002;
 })();
