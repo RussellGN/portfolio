@@ -113,6 +113,9 @@
 		opacity: 1 !important;
 		background-color: rgb(120, 61, 180) !important;
 	}
+	.btn-reb i {
+		pointer-events: none;
+	}
 }
 
 /* photos */

@@ -49,10 +49,37 @@
 	}
 
 	select(".my-nav-link", true).forEach((link) => {
-		link.onclick = () => {
+		link.onclick = (e) => {
+			e.preventDefault();
 			document.getElementById("offcanvas-close").click();
+			if (e.target.hash === "#home") {
+				window.scrollTo(0, 0);
+				return;
+			}
+
+			let menuButtonContainer = select("#menu-button-container");
+			let offset = menuButtonContainer.offsetHeight;
+
+			let elementPos = document.querySelector(e.target.hash).offsetTop;
+
+			window.scrollTo({
+				top: elementPos - offset,
+				behavior: "smooth",
+			});
 		};
 	});
 
-	// select("#my-age").textContent = new Date().getFullYear() - 2002;
+	/* Scroll to about butoon */
+	document.querySelector(".btn-reb").addEventListener("click", (e) => {
+		e.preventDefault();
+		let menuButtonContainer = select("#menu-button-container");
+		let offset = menuButtonContainer.offsetHeight;
+
+		let elementPos = document.querySelector("#about").offsetTop;
+
+		window.scrollTo({
+			top: elementPos - offset,
+			behavior: "smooth",
+		});
+	});
 })();
