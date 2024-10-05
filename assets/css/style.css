@@ -223,3 +223,6 @@
    border: solid thin rgb(173, 173, 173);
    border-radius: 10px;
 }
+.my-nav-link {
+   text-decoration: underline !important;
+}
