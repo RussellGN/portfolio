@@ -226,3 +226,7 @@
 .my-nav-link {
    text-decoration: underline !important;
 }
+
+.c-pointer {
+   cursor: pointer;
+}
