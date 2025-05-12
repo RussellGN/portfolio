@@ -230,3 +230,7 @@
 .c-pointer {
    cursor: pointer;
 }
+
+#portfolio img {
+   aspect-ratio: 16/9;
+}
