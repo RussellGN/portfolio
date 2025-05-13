@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build --outDir ../",
     "lint": "eslint .",
     "qc": "pnpm lint && tsc --noEmit",
     "c-fmt": "prettier --check .",
