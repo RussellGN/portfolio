@@ -2,12 +2,12 @@ import type { Product, Technology } from "./types";
 
 export const SOCIALS = [
    {
-      name: "github",
+      name: "GitHub",
       url: "https://www.github.com/russellgn",
       logoSrc: "/images/github.svg",
    },
    {
-      name: "linkedin",
+      name: "LinkedIn",
       url: "https://www.linkedin.com/in/russell-gundani-26528b236/",
       logoSrc: "/images/linkedin.svg",
    },
@@ -20,7 +20,7 @@ export const TECHNOLOGIES: Technology[] = [
       logoSrc: "/images/tech-logos/rust.svg",
    },
    {
-      name: "Axum",
+      name: "Axum.rs",
       logoSrc: "/images/tech-logos/axum2.png",
    },
    {
@@ -45,11 +45,11 @@ export const TECHNOLOGIES: Technology[] = [
       logoSrc: "/images/tech-logos/typescript.svg",
    },
    {
-      name: "React",
+      name: "React Js",
       logoSrc: "/images/tech-logos/react-2.svg",
    },
    {
-      name: "Next",
+      name: "Next Js",
       logoSrc: "/images/tech-logos/next-js.svg",
    },
    {
