@@ -4,38 +4,38 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-   --background: oklch(1 0 0);
-   --foreground: oklch(0.145 0 0);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
 }
 
 .dark {
-   --background: rgb(28, 25, 31);
-   --foreground: whitesmoke;
+  --background: rgb(28, 25, 31);
+  --foreground: whitesmoke;
 }
 
 @theme inline {
-   --color-background: var(--background);
-   --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 }
 
 @layer base {
-   body {
-      @apply bg-background text-foreground;
-   }
-   ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-   }
-   ::-webkit-scrollbar-thumb {
-      @apply border-foreground/50 bg-background hover:bg-foreground/20 rounded-lg border-2;
-   }
-   ::-webkit-scrollbar-track {
-      @apply bg-foreground/50;
-   }
-   .lucide:not(.lucide-exempt) {
-      @apply size-[17px];
-   }
-   a {
-      @apply text-foreground/80 transition-all duration-75 underline underline-offset-2 hover:text-foreground/100;
-   }
+  body {
+    @apply bg-background text-foreground;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply border-foreground/50 bg-background hover:bg-foreground/20 rounded-lg border-2;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-foreground/50;
+  }
+  .lucide:not(.lucide-exempt) {
+    @apply size-[17px];
+  }
+  a {
+    @apply text-foreground/80 hover:text-foreground/100 underline underline-offset-2 transition-all duration-75;
+  }
 }

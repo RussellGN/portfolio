@@ -6,49 +6,69 @@ import { ChevronsRight } from "lucide-react";
 import { PRODUCTS, SOCIALS, TECHNOLOGIES } from "./lib/constants";
 
 export default function App() {
-   return (
-      <div className="flex flex-col min-h-screen ">
-         <main className="container p-4 justify-around grow mx-auto flex flex-col gap-10 text-foreground/80 flex-1">
-            <Section title="bio">
-               <p className="max-w-[50ch]">Hi, Im Russell. I build for the Web, desktop & mobile. Code is my craft!</p>
-            </Section>
+  return (
+    <div className="flex min-h-screen flex-col">
+      <main className="text-foreground/80 container mx-auto flex flex-1 grow flex-col justify-around gap-10 p-4">
+        <Section title="bio">
+          <p className="max-w-[50ch]">
+            Hi, Im Russell. I build for the Web, desktop & mobile. Code is my
+            craft!
+          </p>
+        </Section>
 
-            <Section title="stack">
-               <div className="flex flex-wrap items-center">
-                  {TECHNOLOGIES.map((technology, index) => (
-                     <React.Fragment key={index}>
-                        <StackItem technology={technology} />
-                        {index !== TECHNOLOGIES.length - 1 && <div className=" w-7 h-[2px] bg-foreground/20 mx-1 mb-5" />}
-                     </React.Fragment>
-                  ))}
-               </div>
-            </Section>
+        <Section title="stack">
+          <div className="flex flex-wrap items-center">
+            {TECHNOLOGIES.map((technology, index) => (
+              <React.Fragment key={index}>
+                <StackItem technology={technology} />
+                {index !== TECHNOLOGIES.length - 1 && (
+                  <div className="bg-foreground/20 mx-1 mb-5 h-[2px] w-7" />
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+        </Section>
 
-            <Section title="showcase">
-               <div>
-                  <a href="https://github.com/russellgn" target="_blank" rel="noopener noreferrer" className="flex w-fit items-center gap-1 text-xs">
-                     <ChevronsRight />
-                     More on GitHub...
-                  </a>
-                  <div className="grid grid-cols-2 gap-30">
-                     {PRODUCTS.map((product, index) => (
-                        <ShowcaseItem key={index} product={product} />
-                     ))}
-                  </div>
-               </div>
-            </Section>
+        <Section title="showcase">
+          <div>
+            <a
+              href="https://github.com/russellgn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-fit items-center gap-1 text-xs"
+            >
+              <ChevronsRight />
+              More on GitHub...
+            </a>
+            <div className="grid grid-cols-2 gap-30">
+              {PRODUCTS.map((product, index) => (
+                <ShowcaseItem key={index} product={product} />
+              ))}
+            </div>
+          </div>
+        </Section>
 
-            <Section title="social">
-               <div className="flex gap-5 items-center">
-                  {SOCIALS.map((social, index) => (
-                     <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 mb-2  ">
-                        <img src={social.logoSrc} alt={`${social.name} logo`} className="size-6 bg-foreground rounded-md" />
-                        {social.name}
-                     </a>
-                  ))}
-               </div>
-            </Section>
-         </main>
-      </div>
-   );
+        <Section title="social">
+          <div className="flex items-center gap-5">
+            {SOCIALS.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-2 flex items-center gap-2"
+              >
+                <img
+                  src={social.logoSrc}
+                  alt={`${social.name} logo`}
+                  className="bg-foreground size-6 rounded-md"
+                />
+                {social.name}
+              </a>
+            ))}
+          </div>
+        </Section>
+      </main>
+    </div>
+  );
 }
