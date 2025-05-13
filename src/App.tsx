@@ -8,7 +8,7 @@ import { PRODUCTS, SOCIALS, TECHNOLOGIES } from "./lib/constants";
 export default function App() {
   return (
     <div className="flex min-h-screen flex-col">
-      <main className="text-foreground/80 container mx-auto flex flex-1 grow flex-col justify-around gap-10 p-4">
+      <main className="text-foreground/80 mx-auto flex max-w-[80rem] flex-1 grow flex-col justify-around gap-10 p-4">
         <Section title="bio">
           <p className="max-w-[50ch]">
             Hi, Im Russell. I build for the Web, desktop & mobile. Code is my
