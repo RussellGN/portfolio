@@ -5,13 +5,13 @@ export default function ShowcaseItem({ product }: { product: Product }) {
     <div className="flex items-center justify-center gap-5">
       {product.desktopScreenShotSrc && (
         <img
-          src={product.desktopScreenShotSrc}
+          src={import.meta.env.BASE_URL + product.desktopScreenShotSrc}
           alt={product.name + " desktop screenshot"}
           className="h-auto w-1/3"
         />
       )}
 
-      {/* {product.mobileScreenShotSrc && <img src={product.mobileScreenShotSrc} alt={product.name + " mobile screenshot"} className="w-1/2 h-auto" />} */}
+      {/* {product.mobileScreenShotSrc && <img src={import.meta.env.BASE_URL + product.mobileScreenShotSrc} alt={product.name + " mobile screenshot"} className="w-1/2 h-auto" />} */}
 
       <div>
         <a

@@ -59,7 +59,7 @@ export default function App() {
                 className="mb-2 flex items-center gap-2"
               >
                 <img
-                  src={social.logoSrc}
+                  src={import.meta.env.BASE_URL + social.logoSrc}
                   alt={`${social.name} logo`}
                   className="bg-foreground size-6 rounded-md"
                 />
