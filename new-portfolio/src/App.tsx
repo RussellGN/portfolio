@@ -32,7 +32,7 @@ export default function App() {
         <Section title="showcase">
           <div>
             <a
-              href="https://github.com/russellgn"
+              href="https://github.com/RussellGN?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-fit items-center gap-1 text-xs"
