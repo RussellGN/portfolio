@@ -1,11 +1,14 @@
 {
   "name": "portfolio",
+  "homepage": "https://russellgn.github.io/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "pnpm build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite --open",
-    "build": "tsc -b && vite build --outDir ../",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "qc": "pnpm lint && tsc --noEmit",
     "c-fmt": "prettier --check .",
@@ -14,6 +17,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.6",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.509.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
