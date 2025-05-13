@@ -9,7 +9,7 @@ export default function StackItem({ technology }: { technology: Technology }) {
         title={technology.name}
         className="h-6 w-auto max-w-20 md:h-9"
       />
-      <p className="text-foreground/80 text-xs font-light">{technology.name}</p>
+      <p className="text-foreground/80 text-sm font-light">{technology.name}</p>
     </div>
   );
 }

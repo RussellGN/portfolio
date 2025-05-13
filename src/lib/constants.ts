@@ -45,15 +45,15 @@ export const TECHNOLOGIES: Technology[] = [
     logoSrc: "/images/tech-logos/typescript.svg",
   },
   {
-    name: "React Js",
+    name: "React",
     logoSrc: "/images/tech-logos/react-2.svg",
   },
   {
-    name: "Next Js",
+    name: "Next",
     logoSrc: "/images/tech-logos/next-js.svg",
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     logoSrc: "/images/tech-logos/tailwind-css-2.svg",
   },
   // mobile and desktop

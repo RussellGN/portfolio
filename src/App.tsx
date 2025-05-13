@@ -35,7 +35,7 @@ export default function App() {
               href="https://github.com/RussellGN?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-fit items-center gap-1 text-xs"
+              className="flex w-fit items-center gap-1 text-sm"
             >
               <ChevronsRight />
               More on GitHub...

@@ -18,12 +18,12 @@ export default function ShowcaseItem({ product }: { product: Product }) {
           href={product.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="block font-semibold"
+          className="mb-2 block font-semibold"
         >
           {product.name}
         </a>
 
-        <p className="max-w-prose text-xs">{product.description}</p>
+        <p className="max-w-prose text-sm">{product.description}</p>
       </div>
     </div>
   );
