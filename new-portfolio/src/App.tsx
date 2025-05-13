@@ -17,12 +17,12 @@ export default function App() {
         </Section>
 
         <Section title="stack">
-          <div className="flex flex-wrap items-center">
+          <div className="flex flex-wrap items-center justify-around gap-3 md:justify-start md:gap-0">
             {TECHNOLOGIES.map((technology, index) => (
               <React.Fragment key={index}>
                 <StackItem technology={technology} />
                 {index !== TECHNOLOGIES.length - 1 && (
-                  <div className="bg-foreground/20 mx-1 mb-5 h-[2px] w-7" />
+                  <div className="bg-foreground/20 mx-1 mb-5 hidden h-[2px] w-7 md:block" />
                 )}
               </React.Fragment>
             ))}
@@ -40,7 +40,7 @@ export default function App() {
               <ChevronsRight />
               More on GitHub...
             </a>
-            <div className="grid grid-cols-2 gap-30">
+            <div className="grid grid-cols-1 gap-30 md:grid-cols-2">
               {PRODUCTS.map((product, index) => (
                 <ShowcaseItem key={index} product={product} />
               ))}
