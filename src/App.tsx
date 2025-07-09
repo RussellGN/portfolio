@@ -2,7 +2,6 @@ import React from "react";
 import Section from "./components/Section";
 import StackItem from "./components/StackItem";
 import ShowcaseItem from "./components/ShowcaseItem";
-import { ChevronsRight } from "lucide-react";
 import { PRODUCTS, SOCIALS, TECHNOLOGIES } from "./lib/constants";
 
 export default function App() {
@@ -11,8 +10,9 @@ export default function App() {
       <main className="text-foreground/80 mx-auto flex max-w-[80rem] flex-1 grow flex-col justify-around gap-10 p-4">
         <Section title="bio">
           <p className="max-w-[50ch]">
-            Hi, Im Russell. I build for the Web, desktop & mobile. Code is my
-            craft!
+            Hi, Im Russell. I build for the Web, desktop & mobile.
+            {/* Code is my
+            craft! */}
           </p>
         </Section>
 
@@ -31,15 +31,6 @@ export default function App() {
 
         <Section title="showcase">
           <div>
-            <a
-              href="https://github.com/RussellGN?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex w-fit items-center gap-1 text-sm"
-            >
-              <ChevronsRight />
-              More on GitHub...
-            </a>
             <div className="grid grid-cols-1 gap-30 md:grid-cols-2">
               {PRODUCTS.map((product, index) => (
                 <ShowcaseItem key={index} product={product} />

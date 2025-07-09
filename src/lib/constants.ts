@@ -23,14 +23,14 @@ export const TECHNOLOGIES: Technology[] = [
     name: "Axum.rs",
     logoSrc: "/images/tech-logos/axum2.png",
   },
-  {
-    name: "Java",
-    logoSrc: "/images/tech-logos/java-icon.svg",
-  },
-  {
-    name: "Spring Boot",
-    logoSrc: "/images/tech-logos/springio-icon.svg",
-  },
+  // {
+  //   name: "Java",
+  //   logoSrc: "/images/tech-logos/java-icon.svg",
+  // },
+  // {
+  //   name: "Spring Boot",
+  //   logoSrc: "/images/tech-logos/springio-icon.svg",
+  // },
   {
     name: "Python",
     logoSrc: "/images/tech-logos/python-5.svg",
@@ -52,10 +52,10 @@ export const TECHNOLOGIES: Technology[] = [
     name: "Next",
     logoSrc: "/images/tech-logos/next-js.svg",
   },
-  {
-    name: "Tailwind",
-    logoSrc: "/images/tech-logos/tailwind-css-2.svg",
-  },
+  // {
+  //   name: "Tailwind",
+  //   logoSrc: "/images/tech-logos/tailwind-css-2.svg",
+  // },
   // mobile and desktop
   {
     name: "Tauri",
@@ -71,8 +71,7 @@ export const PRODUCTS: Product[] = [
   {
     name: "Task Bridge",
     url: "https://github.com/RussellGN/Task-Bridge",
-    description:
-      "A software dev-cycle solution for  GitHub-averse or non-technical project managers.",
+    description: "Simplified project management on top of GitHub.",
     desktopScreenShotSrc: "/images/screenshots/task-bridge.png",
   },
   // {
