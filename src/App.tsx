@@ -17,7 +17,7 @@ export default function App() {
         </Section>
 
         <Section title="stack">
-          <div className="flex flex-wrap items-center justify-around gap-3 md:justify-start md:gap-0">
+          <div className="flex flex-wrap items-center gap-3 md:gap-0">
             {TECHNOLOGIES.map((technology, index) => (
               <React.Fragment key={index}>
                 <StackItem technology={technology} />
